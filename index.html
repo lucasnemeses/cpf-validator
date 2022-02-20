@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CPF Validator</title>
+    <style>
+        .alert-fail {
+            color: #ef4444 !important;
+        }
+        .input-fail {
+            border-color: #ef4444 !important;
+        }
+    </style>
+</head>
+
+<body>    
+    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 w-screen h-screen pt-20">
+        <div class="bg-white rounded-xl py-5 px-7 mx-auto w-96"> 
+            <h1 class="font-medium text-xl text-neutral-800 mb-4">CPF Validator</h1>
+            <div class="flex justify-between items-center gap-x-2">
+                <input data-mask type="text" placeholder="Digite seu CPF" class="bg-slate-50 rounded-md border border-cyan-600 text-neutral-700 py-0.5 px-2 text-sm outline-2 outline-cyan-700 w-11/12">
+                <button data-btn class="bg-cyan-500 text-white text-sm rounded-md py-0.5 px-2 outline-cyan-700 transition active:bg-cyan-600">
+                    Validar
+                </button>
+            </div>
+            <p data-result class="text-ms text-green-500 mt-2"></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="main.js"></script>
+</body>
+</html>
