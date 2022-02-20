@@ -29,13 +29,16 @@
             return;
         }
 
-        let cpf = this.input.value.replace(/\D/g,'').split('');
+        const cpfClear = this.input.value.replace(/\D/g,'');
+        const sequential = cpfClear[0].repeat(cpfClear.length);
         
-        if (cpf.length !== 11) {
+        if (cpfClear.length !== 11 || sequential === cpfClear) {
             this.warning('CPF inválido.');
             return;
         }
-        
+
+        let cpf = cpfClear.split('');
+
         cpf = cpf.map(value => parseInt(value)); 
         const validade = [];
 
