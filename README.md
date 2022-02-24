@@ -2,4 +2,4 @@
 
 Validador de CPF
 
-![To Do List](imgs/cpf-validator.gif)
+![To Do List](cpf-validator.gif)
