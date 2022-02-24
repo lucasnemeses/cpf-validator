@@ -7,6 +7,7 @@
         const mask = IMask(input, { mask: '000.000.000-00' });
         const validator = new CPFValidador(input, btn, result);
         validator.init();
+        console.log(validator);
     });
 
     function CPFValidador(input, btn, result) {
